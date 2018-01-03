@@ -1,0 +1,10 @@
+Problem Statement:
+Test the law of large numbers for N random normally distributed numbers with mean=0 and sd=1.
+Given, Expected value of numbers between -1 and 1 E(x) = 68.2% (Check normal_distribution_probabilities.png)
+Check that Mean(Xn) -> E(x)
+
+
+Motivation:
+This is a basic validation problem in statistics.Coding the solution in Python is a good way to use numpy library's
+randn() function to generate large amount of random numbers which are standard normally distributed(mean=0,sd=1)
+
