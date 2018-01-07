@@ -16,7 +16,7 @@ __author__ = 'sumansourav'
 ''' The following code creates a visualization of the US Gross amount by Genre of the available movies.'''
 
 # Load data set into memory for calculation and manipulation
-mov = pd.read_csv('Movies_Financials_Data.csv', encoding='ISO-8859-1')
+mov = pd.read_csv('../2_Prepared_Data/Movies_Financials_Data.csv', encoding='ISO-8859-1')
 
 # Create a data sub-set with required studios only.
 required_studios_filter = ['Buena Vista Studios', 'Sony', 'Universal', 'Paramount Pictures', 'WB', 'Fox']
@@ -45,4 +45,3 @@ bxplt.set_xlabel('Genre', fontsize=22)
 bxplt.set_ylabel('Gross % US', fontsize=22)
 bxplt.legend(loc='upper left', bbox_to_anchor=(1.05, 1))
 plt.show()
-
